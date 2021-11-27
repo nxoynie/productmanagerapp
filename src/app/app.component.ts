@@ -108,7 +108,7 @@ export class AppComponent implements OnInit{
       this.deleteProduct = product;
       button.setAttribute('data-target', '#deleteProductModal');
     }
-    container?.appendChild(button);
+    container.appendChild(button);
     button.click();
   }
 }
