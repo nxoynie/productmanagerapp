@@ -80,7 +80,8 @@ export class AppComponent implements OnInit{
     const results: Product[] = [];
     for (const product of this.products) {
       if (product.name.toLowerCase().indexOf(key.toLowerCase()) !== -1
-        || product.type.toLowerCase().indexOf(key.toLowerCase()) !== -1) {
+        || product.type.toLowerCase().indexOf(key.toLowerCase()) !== -1
+        || product.milliliter.toString().indexOf(key.toString()) !== -1){
         results.push(product);
       }
     }
