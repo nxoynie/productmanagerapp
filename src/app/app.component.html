@@ -20,7 +20,7 @@
     <div *ngFor="let product of products" class="ibox">
       <div class="ibox-content product-box">
         <div class="product-imitation">
-          <img src="{{product?.imageUrl}}" alt="">
+          <img src="/src/assets/prop.jpg" alt="">
         </div>
         <div class="product-desc">
           <small class="text-muted">Name</small>
@@ -138,7 +138,6 @@
   </div>
 </div>
 
-<!-- Notification for no employees -->
 <div *ngIf="products?.length == 0" class="col-lg-12 col-md-12 col-xl-12">
   <div class="alert alert-info" role="alert">
     <h4 class="alert-heading">NO PRODUCTS!</h4>
